@@ -8,15 +8,15 @@ goBtn.addEventListener('click', function(){
     
         console.log(rowNum.value);
 
-        for( let i=0;i<rowNum.value;i++){
+        for( let r=0;r<rowNum.value;r++){
             let row = document.createElement('div');
             row.setAttribute('class','row');
-            for( let i=0;i<colNum.value;i++){
+            for( let c=0;c<colNum.value;c++){
                 let col = document.createElement('div');
                 col.setAttribute('class','col');
-                for( let i=0;i<pTagNum.value;i++){
+                for( let p=0;p<pTagNum.value;p++){
                     let pTagNum = document.createElement('div');
-                    pTagNum.innerText="column area"
+                    pTagNum.innerText=`Row${r} Cols${c} Ptag${p}`;
                     
                     col.appendChild(pTagNum);
                 }
