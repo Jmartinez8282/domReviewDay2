@@ -11,7 +11,17 @@ goBtn.addEventListener('click', function(){
         for( let i=0;i<rowNum.value;i++){
             let row = document.createElement('div');
             row.setAttribute('class','row');
-            
+            for( let i=0;i<colNum.value;i++){
+                let col = document.createElement('div');
+                col.setAttribute('class','col');
+                for( let i=0;i<pTagNum.value;i++){
+                    let pTagNum = document.createElement('div');
+                    pTagNum.innerText="column area"
+                    
+                    col.appendChild(pTagNum);
+                }
+                row.appendChild(col);
+            }
             elementArea.appendChild(row);
         }
    
