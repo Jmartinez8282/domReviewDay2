@@ -6,7 +6,7 @@ let elementArea = document.getElementById('elementArea');
 
 goBtn.addEventListener('click', function(){
 
-    
+    elementArea.innerValue="rowNum";
 
 });
 
